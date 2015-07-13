@@ -1,13 +1,13 @@
 # chrono
 
-Chronometer class :
+<h2>Chronometer class :<h2><br/>
 
-Function :
-  Restart => restart chronom
-  Start => start chrono
-  Pause => pause chrono
-  Toggle => start or pause the chrono
-  getElapsedTime => return elapsed second in a double
-  
-How to use it ?
-Tools::Chronometer ch;
+Function :<br/>
+  Restart => restart chronom<br/>
+  Start => start chrono<br/>
+  Pause => pause chrono<br/>
+  Toggle => start or pause the chrono<br/>
+  getElapsedTime => return elapsed second in a double<br/>
+  <br/>
+How to use it ?<br/>
+Tools::Chronometer ch;<br/>

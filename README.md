@@ -9,3 +9,9 @@ Function :<br/>
   <br/>
 How to use it ?<br/>
 Tools::Chronometer ch;<br/>
+ch.toggle();
+// do op
+ch.pause();
+std::cout << ch.getElapsedTime() << std::endl;
+// ...
+

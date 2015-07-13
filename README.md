@@ -1,7 +1,5 @@
 # chrono
 
-<h2>Chronometer class :</h2><br/>
-
 Function :<br/>
   Restart => restart chronom<br/>
   Start => start chrono<br/>

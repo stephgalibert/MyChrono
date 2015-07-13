@@ -5,23 +5,23 @@
 // Login   <galibe_s@epitech.net>
 // 
 // Started on  Mon Jul 13 22:54:20 2015 stephane galibert
-// Last update Mon Jul 13 22:54:52 2015 stephane galibert
+// Last update Mon Jul 13 23:08:28 2015 stephane galibert
 //
 
 #include "Chrono.hpp"
 
-Chronometer::Chronometer(void)
+Tools::Chronometer::Chronometer(void)
 {
   this->_running = false;
   this->_value = 0;
 }
 
-Chronometer::~Chronometer(void)
+Tools::Chronometer::~Chronometer(void)
 {
 
 }
 
-double Chronometer::restart(void)
+double Tools::Chronometer::restart(void)
 {
   double elapsed = 0.;
 
@@ -31,7 +31,7 @@ double Chronometer::restart(void)
   return (elapsed);
 }
 
-void Chronometer::toggle(void)
+void Tools::Chronometer::toggle(void)
 {
   if (!this->_running)
     start();
@@ -39,14 +39,14 @@ void Chronometer::toggle(void)
     pause();
 }
 
-void Chronometer::start(void)
+void Tools::Chronometer::start(void)
 {
   this->_current = std::chrono::steady_clock::now();
   if (!this->_running)
     this->_running = true;
 }
 
-void Chronometer::pause(void)
+void Tools::Chronometer::pause(void)
 {
   if (this->_running)
     {
@@ -55,7 +55,7 @@ void Chronometer::pause(void)
     }
 }
 
-double Chronometer::getElapsedTime(void)
+double Tools::Chronometer::getElapsedTime(void)
 {
   if (this->_running)
     {
